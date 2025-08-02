@@ -9,6 +9,12 @@
   --font-times-new-roman: var(--font-times-new-roman);
   --font-poppins: var(--font-merryweather);
 
+  --breakpoint-sm: 320px;
+  --breakpoint-md: 640px;
+  --breakpoint-sm: 1024px;
+
+  --spacing-18: 4.5rem;
+
   --color-primary: #00256d;
   --color-primary-800: #36518b;
   --color-primary-600: #697da7;
@@ -44,7 +50,6 @@
 }
 
 body {
-  background: var(--background);
+  background: var(--color-white-instituto);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }

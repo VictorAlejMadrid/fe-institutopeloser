@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${merriweatherSans.className} ${timesNewRoman.variable} antialiased font-black`}>{children}</body>
+      <body className={`${merriweatherSans.className} ${timesNewRoman.variable} antialiased scroll-smooth`}>{children}</body>
     </html>
   );
 }
