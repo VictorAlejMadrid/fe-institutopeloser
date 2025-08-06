@@ -1,0 +1,33 @@
+{
+  "global": {
+    "contact": "Contact",
+    "newsletter": "Newsletter",
+    "donate": "Donate",
+    "volunteering": "Volunteering"
+  },
+
+  "header": {
+    "the_institute": "The Institute",
+    "about_us": "About Us",
+    "volunteer": "Be a volunteer",
+    "honorees": "Honorees"
+  },
+
+  "footer": {
+    "subtitle": "Together we make a difference.",
+    "register_helper": "Sign up to receive new updates!",
+    "newsletter_acceptance": "I authorize to receibe updates about the site",
+    "contact_title": "Get in touch!",
+    "contact_encouragemente": "We are ready to assist you according to your needs"
+  },
+
+  "generic": {
+    "label": {
+      "email": "E-mail",
+      "send": "Send"
+    },
+    "placeholder": {
+      "email": "email@domain.com"
+    }
+  }
+}
