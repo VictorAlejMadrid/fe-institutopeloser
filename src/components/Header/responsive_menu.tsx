@@ -1,8 +1,11 @@
 import { cn } from '@/util/util';
 import { ChevronDown, ChevronUp, Menu } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
 export default function ResponsiveMenu({ headerShowing }: { headerShowing: boolean }) {
+  const t = useTranslations();
+
   const [open, setOpen] = useState(false);
   const [aboutMenu, setAboutMenu] = useState(false);
 
@@ -25,14 +28,14 @@ export default function ResponsiveMenu({ headerShowing }: { headerShowing: boole
           )}
           onClick={() => setAboutMenu((prev) => !prev)}
         >
-          <span>O instituto</span>
+          <span>{t('header.the_institute')}</span>
           {aboutMenu ? <ChevronUp /> : <ChevronDown />}
         </a>
 
         {aboutMenu && (
           <div className={cn('flex flex-col pl-8 py-3 gap-6 bg-primary duration-700', open && headerShowing ? 'translate-0' : 'translate-x-[640px]')}>
-            <a className="hover:cursor-pointer hover:text-secondary">Sobre nós</a>
-            <a className="hover:cursor-pointer hover:text-secondary">Homenageados</a>
+            <a className="hover:cursor-pointer hover:text-secondary">{t('header.about_us')}</a>
+            <a className="hover:cursor-pointer hover:text-secondary">{t('header.honorees')}</a>
           </div>
         )}
 
@@ -42,7 +45,7 @@ export default function ResponsiveMenu({ headerShowing }: { headerShowing: boole
             open && headerShowing ? 'translate-0' : 'translate-x-[640px]'
           )}
         >
-          Newsletter
+          {t('global.newsletter')}
         </a>
         <a
           className={cn(
@@ -50,7 +53,7 @@ export default function ResponsiveMenu({ headerShowing }: { headerShowing: boole
             open && headerShowing ? 'translate-0' : 'translate-x-[640px]'
           )}
         >
-          Contato
+          {t('global.contact')}
         </a>
         <a
           className={cn(
@@ -58,7 +61,7 @@ export default function ResponsiveMenu({ headerShowing }: { headerShowing: boole
             open && headerShowing ? 'translate-0' : 'translate-x-[640px]'
           )}
         >
-          Voluntariado
+          {t('global.volunteering')}
         </a>
       </nav>
     </>

@@ -1,0 +1,33 @@
+{
+  "global": {
+    "contact": "Contato",
+    "newsletter": "Newsletter",
+    "donate": "Doar",
+    "volunteering": "Voluntariado"
+  },
+
+  "header": {
+    "the_institute": "O Instituto",
+    "about_us": "Sobre nós",
+    "volunteer": "Seja Voluntário",
+    "honorees": "Homenageados"
+  },
+
+  "footer": {
+    "subtitle": "Juntos fazemos a diferença.",
+    "register_helper": "Cadastre-se para receber novas notícias!",
+    "newsletter_acceptance": "Autorizo receber informes sobre o site",
+    "contact_title": "Entre em contato!",
+    "contact_encouragemente": "Estamos pronto para atendê-lo conforme suas necessidades"
+  },
+
+  "generic": {
+    "label": {
+      "email": "E-mail",
+      "send": "Enviar"
+    },
+    "placeholder": {
+      "email": "email@dominio.com"
+    }
+  }
+}

@@ -8,12 +8,14 @@ import Whatsapp from '../svg/whatsapp';
 import { useEffect, useRef, useState } from 'react';
 import { cn } from '@/util/util';
 import Linkedin from '../svg/linkedin';
-import { urls } from '@/util/env';
-import ResponsiveMenu from './_components/responsive_menu';
+import { urls } from '@/util/variables';
+import ResponsiveMenu from './responsive_menu';
+import { useTranslations } from 'next-intl';
 
 export default function Header() {
-  const [aboutMenu, setAboutMenu] = useState(false);
+  const t = useTranslations();
 
+  const [aboutMenu, setAboutMenu] = useState(false);
   const [hideHeader, setHideHeader] = useState(false);
   const lastScrollY = useRef(0);
 
@@ -40,7 +42,7 @@ export default function Header() {
 
   return (
     <header
-      className={cn('z-20 flex flex-col font-black fixed top-0 w-full duration-1000', hideHeader ? '-translate-y-18' : 'translate-y-0')}
+      className={cn('z-20 flex flex-col font-black fixed top-0 w-full duration-500', hideHeader ? '-translate-y-18' : 'translate-y-0')}
       onMouseLeave={() => setAboutMenu(false)}
     >
       <div className="bg-white-instituto h-18 flex justify-between items-center px-4 py-3 md:px-8">
@@ -52,7 +54,7 @@ export default function Header() {
         <nav className="md:flex hidden gap-12 font-normal text-lg text-primary">
           <div className="relative">
             <a className={cn('flex items-center gap-2 hover:cursor-pointer', aboutMenu && 'text-secondary')} onMouseEnter={() => setAboutMenu(true)}>
-              <span>O Instituto</span>
+              <span>{t('header.the_institute')}</span>
               {aboutMenu ? <ChevronUp /> : <ChevronDown />}
             </a>
 
@@ -62,30 +64,32 @@ export default function Header() {
                 onMouseLeave={() => setAboutMenu(false)}
               >
                 <a className="flex items-center px-4 py-2 hover:text-terciary" href="">
-                  Sobre nós
+                  {t('header.about_us')}
                 </a>
                 <a className="flex items-center px-4 py-2 hover:text-terciary" href="">
-                  Homenageados
+                  {t('header.honorees')}
                 </a>
               </div>
             )}
           </div>
 
-          <a className="hover:cursor-pointer hover:text-secondary">Newsletter</a>
-          <a className="hover:cursor-pointer hover:text-secondary" href='#contact'>Contato</a>
-          <a className="hover:cursor-pointer hover:text-secondary hidden lg:block">Voluntariado</a>
+          <a className="hover:cursor-pointer hover:text-secondary">{t('global.newsletter')}</a>
+          <a className="hover:cursor-pointer hover:text-secondary" href="#contact">
+            {t('global.contact')}
+          </a>
+          <a className="hover:cursor-pointer hover:text-secondary hidden lg:block">{t('global.volunteering')}</a>
         </nav>
 
         <ResponsiveMenu headerShowing={!hideHeader} />
       </div>
 
       <div className="flex self-end text-white-instituto font-bold text-sm">
-        <button className="bg-green-instituto hover:bg-green-600 px-4 py-0.5 hover:cursor-pointer">
-          <p>DOAR</p>
+        <button className="bg-green-instituto hover:bg-green-600 px-4 py-0.5 hover:cursor-pointer uppercase">
+          <p>{t('global.donate')}</p>
         </button>
 
-        <button className="bg-primary hover:bg-primary-800 px-2 py-0.5 hover:cursor-pointer">
-          <p>SEJA VOLUNTÁRIO</p>
+        <button className="bg-primary hover:bg-primary-800 px-2 py-0.5 hover:cursor-pointer uppercase">
+          <p>{t('header.volunteer')}</p>
         </button>
 
         <div className="flex items-center gap-2 bg-secondary px-2 py-0.5 hover:cursor-pointer text-white md:px-4 md:gap-1.5">
