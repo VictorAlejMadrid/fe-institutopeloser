@@ -1,1 +1,1 @@
-export const urls = {};
+export const env = {};
