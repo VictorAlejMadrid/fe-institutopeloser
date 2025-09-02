@@ -1,9 +1,12 @@
 {
   "global": {
+    "instituto_pelo_ser": "Instituto Pelo Ser",
     "contact": "Contato",
     "newsletter": "Newsletter",
     "donate": "Doar",
-    "volunteering": "Voluntariado"
+    "volunteering": "Voluntariado",
+    "support_our_cause": "Ajude nossa causa",
+    "need_help": "Preciso de ajuda"
   },
 
   "header": {
@@ -11,6 +14,10 @@
     "about_us": "Sobre nós",
     "volunteer": "Seja Voluntário",
     "honorees": "Homenageados"
+  },
+
+  "hero": {
+    "description": "Transformamos a vida de crianças e jovens em situação de vulnerabilidade por meio da educação e do desenvolvimento de habilidades como liderança e cidadania."
   },
 
   "footer": {

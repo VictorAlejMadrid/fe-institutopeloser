@@ -42,13 +42,13 @@ export default function Header() {
 
   return (
     <header
-      className={cn('z-20 flex flex-col font-black fixed top-0 w-full duration-500', hideHeader ? '-translate-y-18' : 'translate-y-0')}
+      className={cn('z-50 flex flex-col font-black fixed top-0 w-full duration-500', hideHeader ? '-translate-y-18' : 'translate-y-0')}
       onMouseLeave={() => setAboutMenu(false)}
     >
       <div className="bg-white-instituto h-18 flex justify-between items-center px-4 py-3 md:px-8">
         <div className="flex gap-4 items-center">
-          <Image src="/images/logo_instituto.svg" alt="Logo Instituto Pelo Ser" width={40} height={45} className="h-auto w-auto" />
-          <h1 className="hidden font-bold text-xl font-times-new-roman lg:block">INSTITUTO PELO SER</h1>
+          <Image src="/images/logo_instituto.svg" alt="Logo Instituto Pelo Ser" quality={100} width={40} height={45} priority />
+          <h1 className="hidden font-thin text-xl font-times-new-roman lg:block">{t('global.instituto_pelo_ser')}</h1>
         </div>
 
         <nav className="md:flex hidden gap-12 font-normal text-lg text-primary">
@@ -60,7 +60,7 @@ export default function Header() {
 
             {aboutMenu && (
               <div
-                className="absolute flex mt-2 flex-col rounded-2xl text-white-instituto py-2 bg-primary w-64"
+                className="drop-shadow-2xl absolute flex mt-2 flex-col rounded-2xl text-white-instituto py-2 bg-primary w-64"
                 onMouseLeave={() => setAboutMenu(false)}
               >
                 <a className="flex items-center px-4 py-2 hover:text-terciary" href="">
