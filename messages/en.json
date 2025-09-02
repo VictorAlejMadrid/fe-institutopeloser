@@ -1,9 +1,12 @@
 {
   "global": {
+    "instituto_pelo_ser": "Instituto Pelo Ser",
     "contact": "Contact",
     "newsletter": "Newsletter",
     "donate": "Donate",
-    "volunteering": "Volunteering"
+    "volunteering": "Volunteering",
+    "support_our_cause": "Support our cause",
+    "need_help": "I need help"
   },
 
   "header": {
@@ -11,6 +14,10 @@
     "about_us": "About Us",
     "volunteer": "Be a volunteer",
     "honorees": "Honorees"
+  },
+
+  "hero": {
+    "description": "We empower vulnerable children and young people by fostering their education and developing skills such as leadership and citizenship."
   },
 
   "footer": {
