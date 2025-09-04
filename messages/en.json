@@ -6,7 +6,8 @@
     "donate": "Donate",
     "volunteering": "Volunteering",
     "support_our_cause": "Support our cause",
-    "need_help": "I need help"
+    "need_help": "I need help",
+    "see_more": "Learn more"
   },
 
   "header": {
@@ -18,6 +19,11 @@
 
   "hero": {
     "description": "We empower vulnerable children and young people by fostering their education and developing skills such as leadership and citizenship."
+  },
+
+  "mission": {
+    "title": "Our mission",
+    "mission": "Empowering new generations to act as agents of change in their communities, in order to build a more just and inclusive future."
   },
 
   "footer": {

@@ -13,18 +13,18 @@ export default function HeroSection() {
             quality={100}
             src="/images/logo_instituto_light.svg"
             alt="Instituto Logo"
-            className="drop-shadow-lg"
+            className="drop-shadow-instituto"
             draggable={false}
             width={58}
             height={96}
             priority
           />
-          <h1 className="text-3xl w-[108px] md:w-auto font-times-new-roman md:text-5xl text-white-instituto drop-shadow-lg">
+          <h1 className="text-3xl w-[108px] md:w-auto font-times-new-roman md:text-5xl text-white-instituto drop-shadow-instituto">
             {t('global.instituto_pelo_ser')}
           </h1>
         </div>
 
-        <p className="text-base text-white-instituto mt-8 md:mt-6 drop-shadow-lg font-light text-center md:text-start md:text-lg md:w-[530px]">
+        <p className="text-base text-white-instituto mt-8 md:mt-6 drop-shadow-instituto font-light text-center md:text-start md:text-lg md:w-[530px]">
           {t('hero.description')}
         </p>
 

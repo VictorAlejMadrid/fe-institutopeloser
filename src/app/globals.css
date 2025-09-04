@@ -35,6 +35,8 @@
 
   --color-white-instituto: #f8f8ff;
   --color-green-instituto: #0f8939;
+
+  --drop-shadow-instituto: 2px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 @theme inline {
