@@ -26,6 +26,10 @@
     "mission": "Empowering new generations to act as agents of change in their communities, in order to build a more just and inclusive future."
   },
 
+  "numbers": {
+    "title": "Our numbers"
+  },
+
   "footer": {
     "subtitle": "Together we make a difference.",
     "register_helper": "Sign up to receive new updates!",

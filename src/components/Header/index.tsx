@@ -48,7 +48,7 @@ export default function Header() {
       <div className="bg-white-instituto h-18 flex justify-between items-center px-4 py-3 md:px-8">
         <div className="flex gap-4 items-center">
           <Image src="/images/logo_instituto.svg" alt="Logo Instituto Pelo Ser" quality={100} width={40} height={45} priority />
-          <h1 className="hidden font-thin text-xl font-times-new-roman lg:block">{t('global.instituto_pelo_ser')}</h1>
+          <h1 className="hidden font-thin text-xl text-primary font-times-new-roman lg:block">{t('global.instituto_pelo_ser')}</h1>
         </div>
 
         <nav className="md:flex hidden gap-12 font-normal text-lg text-primary">
