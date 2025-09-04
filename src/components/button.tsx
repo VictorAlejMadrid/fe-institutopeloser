@@ -7,7 +7,7 @@ interface CustomButtonProps extends HTMLAttributes<HTMLButtonElement> {
 
 export default function CustomButton({ styleType = 'white', ...props }: CustomButtonProps) {
   let customStyle =
-    'py-2 rounded-lg uppercase font-semibold drop-shadow-lg hover:cursor-pointer hover:scale-105 duration-75 lg:w-72 lg:text-base md:w-64 text-sm';
+    'py-2 rounded-lg uppercase font-semibold drop-shadow-instituto hover:cursor-pointer hover:scale-105 duration-75 lg:w-72 lg:text-base md:w-64 min-w-64 text-sm';
 
   switch (styleType) {
     case 'primary':
